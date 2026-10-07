@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #FAF6F0;
+  --foreground: #3D2E1E;
+  --primary-brown: #5C4732;
+  --accent-brown: #8B5E3C;
+  --cream-card: #FFFFFF;
+  --cream-border: #E8E0D5;
+  --bg-color: #FAF6F0;
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --card-border: #E8E0D5;
+  --text-main: #3D2E1E;
+  --text-muted: #765C43;
+}
+
+html.dark {
+  --bg-color: #1a140e;
+  --card-bg: rgba(35, 27, 19, 0.85);
+  --card-border: rgba(232, 224, 213, 0.15);
+  --text-main: #FAF6F0;
+  --text-muted: #d4c5b3;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ── Decor pattern background animation ───────────────────── */
+@keyframes decor-float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(3deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes decor-pulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.05); }
+}
+
+.animate-decor-float {
+  animation: decor-float 6s ease-in-out infinite;
+}
+
+.animate-decor-pulse {
+  animation: decor-pulse 4s ease-in-out infinite;
+}
+
+.glass-panel {
+  background-color: var(--card-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--card-border);
+}
+
+.font-amiri {
+  font-family: 'Amiri', serif, system-ui;
+}
+
+

@@ -1,0 +1,56 @@
+.project {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.project h2 {
+    font-size: 32px;
+    margin: 0px;
+    font-weight: 700;
+    transition: all 0.4s ease;
+    color: #FAF6F0;
+}
+
+.project p {
+    transition: all 0.4s ease;
+    font-weight: 400;
+    color: #C9A876;
+    font-size: 15px;
+}
+
+.project:last-of-type {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.project:hover {
+    opacity: 0.75;
+}
+
+.project:hover h2 {
+    transform: translateX(-10px);
+    color: #C9A876;
+}
+
+.project:hover p {
+    transform: translateX(10px);
+}
+
+@media (max-width: 768px) {
+    .project {
+        padding: 24px 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .project h2 {
+        font-size: 20px;
+    }
+}

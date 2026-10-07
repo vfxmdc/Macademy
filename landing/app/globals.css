@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FAF6F0;
+  --foreground: #3D2E1E;
+  --primary-brown: #5C4732;
+  --accent-brown: #8B5E3C;
+  --cream-card: #FFFFFF;
+  --cream-border: #E8E0D5;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* ── Global smooth performance ─────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  overscroll-behavior: none;
+}
+
+/* ── Decor pattern background animation ───────────────────── */
+@keyframes decor-float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(3deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes decor-pulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.05); }
+}
+
+.animate-decor-float {
+  animation: decor-float 6s ease-in-out infinite;
+}
+
+.animate-decor-pulse {
+  animation: decor-pulse 4s ease-in-out infinite;
+}
+
+/* ── Fast, GPU-accelerated button hovers ────────────────── */
+a,
+button {
+  transition: transform 120ms cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              background-color 120ms cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              color 120ms cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              box-shadow 120ms cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              border-color 120ms cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              opacity 120ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+
+a:active,
+button:active {
+  transform: scale(0.96) !important;
+}
+
+/* ── Modal backdrop fade ─────────────────────────────────── */
+.backdrop-blur-sm {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* ── Custom Scrollbar ────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F5EFE6;
+}
+::-webkit-scrollbar-thumb {
+  background: #A98B6F;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5C4732;
+}
+
+

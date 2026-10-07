@@ -1,0 +1,238 @@
+{
+  "courses": [
+    {
+      "id": "crs-1",
+      "name": "Full-Stack Web Development Bootcamp",
+      "category": "DEVELOPMENT",
+      "price": 25000,
+      "description": "Master HTML, CSS, JavaScript, React & Node.js with hands-on real-world projects.",
+      "driveUrl": "https://drive.google.com/drive/folders/1example_fullstack_dev",
+      "instructor": "Eng. Sofiane Barka",
+      "isActive": true,
+      "createdAt": "2026-09-30T10:00:00.000Z"
+    },
+    {
+      "id": "crs-2",
+      "name": "UI/UX Design & Figma Mastery",
+      "category": "DESIGN",
+      "price": 18000,
+      "description": "Learn modern user experience principles, prototyping, and glassmorphism design trends in Figma.",
+      "driveUrl": "https://drive.google.com/drive/folders/1example_uiux_figma",
+      "instructor": "Sarah Alami",
+      "isActive": true,
+      "createdAt": "2026-09-30T10:00:00.000Z"
+    },
+    {
+      "id": "crs-3",
+      "name": "Digital Marketing & Social Media Strategy",
+      "category": "MARKETING",
+      "price": 15000,
+      "description": "SEO, Facebook/TikTok Ads campaign strategies, and audience targeting for online businesses.",
+      "driveUrl": "https://drive.google.com/drive/folders/1example_marketing_mastery",
+      "instructor": "Amine Khelifi",
+      "isActive": true,
+      "createdAt": "2026-09-30T10:00:00.000Z"
+    }
+  ],
+  "students": [
+    {
+      "id": "std-1",
+      "name": "John Miller",
+      "email": "john.miller@example.com",
+      "phone": "0555 12 34 56",
+      "accessCode": "ABCD-9281",
+      "progressPercentage": 50,
+      "enrolledCourseIds": [
+        "crs-1"
+      ],
+      "status": "ACTIVE",
+      "createdAt": "2026-09-30T10:00:00.000Z"
+    },
+    {
+      "id": "std-2",
+      "name": "Fatima Zahra",
+      "email": "fatima.z@example.com",
+      "phone": "0599 59 95 95",
+      "accessCode": "POFH-8572",
+      "progressPercentage": 30,
+      "enrolledCourseIds": [
+        "crs-1"
+      ],
+      "status": "ACTIVE",
+      "createdAt": "2026-09-30T10:00:00.000Z"
+    },
+    {
+      "id": "std-3",
+      "name": "Mohammed Anis",
+      "email": "m.anis@example.com",
+      "phone": "0555 83 63 99",
+      "accessCode": "XA98-1042",
+      "progressPercentage": 65,
+      "enrolledCourseIds": [
+        "crs-2",
+        "crs-3"
+      ],
+      "status": "ACTIVE",
+      "createdAt": "2026-09-30T10:00:00.000Z"
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "qz-1",
+      "courseId": "crs-1",
+      "title": "JavaScript Core Fundamentals Quiz",
+      "description": "Test your knowledge on JS variables, closures, promises, and async/await.",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Which keyword is used to declare a block-scoped variable in modern JavaScript?",
+          "options": [
+            "var",
+            "let",
+            "global",
+            "def"
+          ],
+          "correctOptionIndex": 1
+        },
+        {
+          "id": "q2",
+          "question": "What does JSON.stringify() perform?",
+          "options": [
+            "Parses JSON string",
+            "Converts JS object to JSON string",
+            "Compiles code",
+            "Deletes object"
+          ],
+          "correctOptionIndex": 1
+        },
+        {
+          "id": "q3",
+          "question": "What is the default execution model of JavaScript in browsers?",
+          "options": [
+            "Multi-threaded",
+            "Single-threaded synchronous event loop",
+            "Parallel native workers",
+            "Blocking server process"
+          ],
+          "correctOptionIndex": 1
+        }
+      ],
+      "createdAt": "2026-09-30T10:00:00.000Z"
+    },
+    {
+      "id": "qz-2",
+      "courseId": "crs-2",
+      "title": "UI/UX Visual Principles & Prototyping Test",
+      "description": "Evaluate color hierarchy, micro-interactions, typography and glassmorphism standards.",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "What visual effect is key to modern Glassmorphism aesthetics?",
+          "options": [
+            "Heavy dropshadow",
+            "Backdrop blur with subtle white border",
+            "Flat solid gray fill",
+            "Gradient text outline"
+          ],
+          "correctOptionIndex": 1
+        },
+        {
+          "id": "q2",
+          "question": "What is the recommended maximum line length for readable web typography?",
+          "options": [
+            "20-30 characters",
+            "45-75 characters",
+            "120-150 characters",
+            "Unlimited width"
+          ],
+          "correctOptionIndex": 1
+        }
+      ],
+      "createdAt": "2026-09-30T10:00:00.000Z"
+    }
+  ],
+  "submissions": [
+    {
+      "id": "sub-1790776331680",
+      "studentId": "std-2",
+      "studentName": "Fatima Zahra",
+      "quizId": "qz-1",
+      "courseId": "crs-1",
+      "score": 0,
+      "totalQuestions": 3,
+      "percentage": 0,
+      "submittedAt": "2026-09-30T13:52:11.680Z"
+    },
+    {
+      "id": "sub-1790857486351",
+      "studentId": "std-3",
+      "studentName": "Mohammed Anis",
+      "quizId": "qz-1",
+      "courseId": "crs-1",
+      "score": 3,
+      "totalQuestions": 3,
+      "percentage": 100,
+      "submittedAt": "2026-10-01T12:24:46.351Z"
+    },
+    {
+      "id": "sub-1790863819483",
+      "studentId": "std-2",
+      "studentName": "Fatima Zahra",
+      "quizId": "qz-1",
+      "courseId": "crs-1",
+      "score": 1,
+      "totalQuestions": 3,
+      "percentage": 33,
+      "submittedAt": "2026-10-01T14:10:19.483Z"
+    },
+    {
+      "id": "sub-1790863837159",
+      "studentId": "std-2",
+      "studentName": "Fatima Zahra",
+      "quizId": "qz-1",
+      "courseId": "crs-1",
+      "score": 0,
+      "totalQuestions": 3,
+      "percentage": 0,
+      "submittedAt": "2026-10-01T14:10:37.159Z"
+    },
+    {
+      "id": "sub-1790863859405",
+      "studentId": "std-2",
+      "studentName": "Fatima Zahra",
+      "quizId": "qz-1",
+      "courseId": "crs-1",
+      "score": 1,
+      "totalQuestions": 3,
+      "percentage": 33,
+      "submittedAt": "2026-10-01T14:10:59.405Z"
+    },
+    {
+      "id": "sub-1791309808594",
+      "studentId": "std-3",
+      "studentName": "Mohammed Anis",
+      "quizId": "qz-2",
+      "courseId": "crs-2",
+      "score": 0,
+      "totalQuestions": 2,
+      "percentage": 0,
+      "submittedAt": "2026-10-06T18:03:28.594Z"
+    }
+  ],
+  "admins": [
+    {
+      "id": "admin-super",
+      "name": "Super Admin",
+      "code": "9999",
+      "isSuperAdmin": true,
+      "createdAt": "2026-10-01T14:17:22.909Z"
+    },
+    {
+      "id": "admin-1790864472162",
+      "name": "ADMIN MOUNIR",
+      "code": "0000",
+      "isSuperAdmin": false,
+      "createdAt": "2026-10-01T14:21:12.162Z"
+    }
+  ]
+}
